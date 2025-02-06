@@ -133,14 +133,16 @@ printf "What do you want to do? Press a number to choose.\n"
 printf -- "1) Apply symlinks (fix AnimationChanger)\n"
 printf -- "2) Restore backups (unfix AnimationChanger)\n"
 printf -- "3) Clean slate (completely remove and re-download 'movies' folder)\n"
+printf -- "Q) Quit (do nothing)\n"
 valid=0
 until [[ $valid -eq 1 ]]; do
 	printf "\r >    \r > "
 	read -n1 choice
-	case $choice in
+	case ${choice,,} in
 		1) valid=1; printf \\n\\n; applyLinks;;
 		2) valid=1; printf \\n\\n; restoreOriginal;;
 		3) valid=1; printf \\n\\n; cleanSlate;;
+		q) quit 0;;
 	esac
 done
 
