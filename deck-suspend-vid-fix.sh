@@ -14,7 +14,7 @@ err=0
 
 # If this script has been piped into Bash via cURL, download itself and run locally. Things like 'read' fail to run, otherwise.
 if [[ "$(basename $0)" == "bash" ]]; then
-	wget https://tdgalea.co.uk/s/deck-suspend-vid-fix.sh
+	wget https://raw.githubusercontent.com/TDGalea/decky-animationchanger-oled-fix/refs/heads/main/deck-suspend-vid-fix.sh
 	chmod +x deck-suspend-vid-fix.sh
 	printf "\n\nScript does not like being piped into Bash - it has been downloaded to your current directory, and made executable.\n"
 	printf "Please run 'deck-suspend-vid-fix.sh' manually.\n"
