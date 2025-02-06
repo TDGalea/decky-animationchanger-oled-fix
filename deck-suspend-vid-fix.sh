@@ -52,7 +52,7 @@ applyLinks(){
 	done
 	for vid in $throbberVidList; do
 		if [[ -f "$original/$vid.orig" ]]; then
-			printf "\e[1;33mWARN:\e[0m Backup for '$vid' already exists. Leaving this alone. If you're having issues, restoring backups first might help.\n"
+			printf "\e[1;33mNOTE:\e[0m Backup for '$vid' already exists. Leaving this alone. If you're having issues, restoring backups first might help.\n"
 		else
 			printf "Backing up '$vid': "
 			mv "$original/$vid" "$original/$vid.orig" >/dev/null 2>&1
