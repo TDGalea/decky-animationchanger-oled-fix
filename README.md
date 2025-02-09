@@ -1,6 +1,8 @@
 # decky-animationchanger-oled-fix
 Steam now names the OLED suspend animations separately, so AnimationChanger is "broken" when it comes to suspend animations. This script fixes that issue.
 
+Should work for LCD as well, although I don't have an LCD Deck to test with.
+
 Simply download this script, make it executable, then run it.
 If you're feeling lazy, or just aren't comfortable with terminal stuff, open Konsole on your Steam Deck and type/paste these two lines:
 
