@@ -1,3 +1,6 @@
+# REDUNDANT
+Decky AnimationChanger is now fixed. You don't need this script.
+
 # decky-animationchanger-oled-fix
 Steam now names the OLED suspend animations separately, so AnimationChanger is "broken" when it comes to suspend animations. This script fixes that issue.
 
